@@ -1,0 +1,155 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: 				grid;
+	gap: 					0px 0px;
+	grid-template-columns: 	20% 80%;
+  	grid-template-rows: 	1fr;
+  	grid-template-areas:	". .";
+}
+
+.menu_left {
+	background-color: 	#242424;
+	box-shadow:  		2px 2px 1px 1px #999;
+	color: 				white;
+	min-height: 		100vh;
+	height:				100%;
+}
+
+.menu_auto_scroll {
+	position: sticky;
+	top: 0;
+}
+
+.menu_auto_scroll h2 {
+	border-top: 	2px solid #FFF;
+	border-bottom: 	2px solid #FFF;
+	margin:			5% auto;
+	text-align: 	center;
+	width: 			min-content;
+}
+
+.menu_auto_scroll nav {
+	margin: auto;
+	width: 	95%;
+}
+
+.menu_auto_scroll nav ul {
+	list-style: 	none;
+}
+
+.menu_auto_scroll a {
+	color: 				#FFF;
+	cursor: 			pointer;
+	text-decoration: 	none;
+}
+
+#showSiteContents {
+	display: none;
+}
+
+/* Page Contents */
+#pageContents {
+	margin: 		0 auto;
+	width: 			85%;
+}
+
+#pageContents > *:first-child {
+	margin-top:		5%;
+}
+
+#pageContents h1 {
+	border-bottom: 	2px solid #000;
+	border-top: 	2px solid #000;
+	font-size: 		175%;
+	margin-bottom:  5%;
+	padding-bottom: 8px;
+	padding-top:	8px;
+	width: 			max-content;
+}
+
+#pageContents h2 {
+	border-bottom: 	2px solid black;
+	font-size: 		150%;
+}
+
+#pageContents h3 {
+	font-size: 		115%;
+}
+
+#siteContents {
+	transition: 0.5s all ease;
+}
+
+/* Common CSS styles for page content */
+.centered {
+	text-align: 	center;
+	margin-left: 	auto;
+	margin-right: 	auto;
+}
+
+.img-block {
+	display: 		block;
+	margin-bottom: 	2.5rem;
+}
+
+.img-caption {
+	font-style: 	italic;
+}
+
+.math-formula {
+	font-weight: 	bold;
+}
+
+.math-exponent {
+	font-size: 		70%;
+	vertical-align: text-top;
+}
+
+.math-subscript {
+	font-size: 		70%;
+	vertical-align: bottom;
+}
+
+.h3-subheader {
+	border-bottom: 	1px solid #000;
+}
+
+/* Tablets and Phones */
+@media screen and (max-width: 1024px) {
+	body {
+		display: flex;
+	}
+
+	.menu_left {
+		position: fixed;
+		left: 0;
+	}
+
+	#siteContents.closed {
+		left: -80%;
+	}
+
+	#showSiteContents {
+		border-radius: 50%;
+		display: initial;
+		font-size: 48px;
+		height: 48px;
+		padding: 0 0 8px 0;
+		width: 48px;
+		z-index: 1;
+		position: relative;
+		top: 50%;
+		left: 95%;
+	}
+
+	#pageContents h1 {
+		width: unset;
+	}
+
+	.img-block {
+		max-width: 100%;
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"lessonNames": [
+		"An Introduction to Quantum Mechanics",
+		"An Overview of Quantum Computing",
+		"Quantum Circuits and Quantum Gates",
+		"Quantum Algorithms",
+		"Quantum Cryptography",
+		"Quantum Machine Learning"
+	],
+	"labNames": [
+		"Setting up a Qiskit Environment",
+		"Creating Quantum Circuits with Qiskit"
+	]
+}
