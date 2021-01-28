@@ -105,7 +105,7 @@ If no error appears, it means that everything has been set up correctly, and you
 If you are struggling to get your virtual environment to work, a ready-to-use Python virtual environment has
 been packaged and is available [here][link-to-venv].
 
-[link-to-venv]: /data/qiskit-ready-venv.zip
+[link-to-venv]: https://drive.google.com/file/d/10OeTjNfBkmZns8LY2vfAc9HtQ2IdW2Ir/view?usp=sharing
 
 ## References
 

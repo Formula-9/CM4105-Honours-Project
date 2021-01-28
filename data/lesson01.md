@@ -99,15 +99,17 @@ defined as follows:
 
 And therefore, we obtain the following proof:
 
-TODO:
+<!-- TODO: Mathematical formula, simplify and explain ! -->
 
 ## Quantum Teleportation
 
-TODO:
+<!-- TODO: Explain what the Bell State is ! -->
 
 <img class="img-block centered" src="img/lesson01/xkcd-1.png">
 
 <h3 class="img-caption centered">(Source: <a href="https://xkcd.com/465/">XKCD #465: Quantum Teleportation</a>, <a href="https://www.explainxkcd.com/wiki/index.php/465:_Quantum_Teleportation">Explain XKCD page</a>)</h3>
+
+Quantum Teleportation is the concept of "teleporting" information between objects carrying Quantum State. 
 
 ## References
 
