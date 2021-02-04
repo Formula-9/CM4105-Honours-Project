@@ -118,6 +118,8 @@ lesson with more depth, but they may be complicated to understand.
 
 Bra-ket Notation:
 
+<!--TODO: Harvard Referencing: https://www.mybib.com/tools/harvard-referencing-generator -->
+
 - https://docs.microsoft.com/en-us/quantum/concepts/dirac-notation
 - http://www.physics.unlv.edu/~bernard/phy721_99/tex_notes/node6.html
 - https://www.physics.umd.edu/courses/Phys374/fall05/files/DiracNotation.pdf
@@ -125,7 +127,7 @@ Bra-ket Notation:
 
 Quantum Superposition:
 
-- http://physics.gmu.edu/~dmaria/590%20Web%20Page/public_html/qm_topics/superposition/superposition.html
+- Gmu.edu. (n. d.). Superposition Principle. \[online\] Available at: http://physics.gmu.edu/~dmaria/590%20Web%20Page/public_html/qm_topics/superposition/superposition.html [Accessed 4 Feb. 2021]
 
 Quantum Entanglement:
 
@@ -140,11 +142,11 @@ No-Cloning Theorem:
 
 Quantum Teleporation:
 
-- https://brilliant.org/wiki/quantum-teleportation/
-- https://physics.stackexchange.com/questions/62794/mathematical-explanation-of-quantum-teleportation
-- http://lightlike.com/teleport/teletalk.pdf
-- https://qiskit.org/textbook/ch-algorithms/teleportation.html
-- https://en.wikipedia.org/wiki/Quantum_teleportation
+- brilliant.org. (n.d.). Quantum Teleportation | Brilliant Math & Science Wiki. \[online\] Available at: https://brilliant.org/wiki/quantum-teleportation/ \[Accessed 3 Feb. 2021\].
+- Physics Stack Exchange. (n.d.). wavefunction - Mathematical explanation of quantum teleportation. \[online\] Available at: https://physics.stackexchange.com/questions/62794/mathematical-explanation-of-quantum-teleportation \[Accessed 3 Feb. 2021\].
+- Mochon, C. (2006). Introduction to Quantum Teleportation. Perimeter Institute for Theoretical Physics. \[online\] Available at: http://lightlike.com/teleport/teletalk.pdf \[Accessed 3 Feb. 2021\].
+- community.qiskit.org. (n.d.). Quantum Teleportation. \[online\] Available at: https://qiskit.org/textbook/ch-algorithms/teleportation.html \[Accessed 4 Feb. 2021\].
+- Wikipedia Contributors (2019). Quantum teleportation. \[online\] Wikipedia. Available at: https://en.wikipedia.org/wiki/Quantum_teleportation.
 
 [dirac-page]: https://en.wikipedia.org/wiki/Paul_Dirac
 [wiki-qe]: https://en.wikipedia.org/wiki/Quantum_entanglement
