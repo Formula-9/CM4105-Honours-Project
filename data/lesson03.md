@@ -78,11 +78,29 @@ The Swap Gate, as its name implies, is a gate affecting two Qubits A and B, and 
 
 <h3 class="h3-subheader">S and S<span class="math-formula math-exponent">†</span> Gate</h3>
 
+The S Gate is also known as the Z90 gate, because it acts on a single Qubit, and **rotates the Qubit around its Z-axis by 90 degrees (π/2 radians).** S<span class="math-formula math-exponent">†</span> being the conjugate transpose equivalent of the S gate, **represents a -90 degrees (-π/2 radians) rotation on the Z-axis.**
+
+Therefore, the affirmation <span class="math-formula">SS<span class="math-formula math-exponent">†</span> = I</span> is true.
+
+The visual representation of the S and S<span class="math-formula math-exponent">†</span> gates are the following:
+
+<img class="img-block centered" src="img/lesson03/s-gate.png">
+<img class="img-block centered" src="img/lesson03/s-dagger-gate.png">
+
 <!-- TODO: Add a mathematical description of each Gate -->
 
 <h3 class="h3-subheader">T and T<span class="math-formula math-exponent">†</span> Gate</h3>
 
+The T gate is a gate that operates on a single Qubit, and causes said Qubit to perform a 45 degrees (π/4 radians) rotation on the Z-axis. Inversely, the T<span class="math-formula math-exponent">†</span> gate represents a negative rotation, much like the relation between S and S<span class="math-formula math-exponent">†</span>.
+
+Due to its nature, it is possible to define the operation performed by the S gate with the T operator as follows:
+
 <!-- TODO: Add a mathematical description of each Gate -->
+
+The graphical representation of the T and T<span class="math-formula math-exponent">†</span> gates are:
+
+<img class="img-block centered" src="img/lesson03/t-gate.png">
+<img class="img-block centered" src="img/lesson03/t-dagger-gate.png">
 
 ## References:
 

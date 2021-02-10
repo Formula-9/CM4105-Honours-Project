@@ -2,6 +2,8 @@
 
 ## History of Quantum Computing
 
+<!-- TODO: Entire section -->
+
 ## Qubits: What are they ?
 
 <!-- TODO: Explain in more detail the concept -->
@@ -18,6 +20,8 @@ As we can see, a Qubit requires three axes to be represented. The Z axis on the 
 the states **|1⟩ and |0⟩**, but the X and Y axes are just as important, since **it is possible to perform rotations around these axes, which could alter the information of the Qubit when observed.**
 
 ## Manipulating Qubits: Quantum Computers
+
+<!-- TODO: Entire section -->
 
 ## Another form of Quantum Computing: Quantum Annealers 
 

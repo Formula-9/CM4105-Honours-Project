@@ -1,4 +1,4 @@
-<h1 class="centered">Quantum Algorithms</h1>
+<h1 class="centered">Quantum Cryptography</h1>
 
 <!-- TODO: Everything -->
 

@@ -103,13 +103,35 @@ And therefore, we obtain the following proof:
 
 ## Quantum Teleportation
 
-<!-- TODO: Explain what the Bell State is ! -->
-
 <img class="img-block centered" src="img/lesson01/xkcd-1.png">
 
 <h3 class="img-caption centered">(Source: <a href="https://xkcd.com/465/">XKCD #465: Quantum Teleportation</a>, <a href="https://www.explainxkcd.com/wiki/index.php/465:_Quantum_Teleportation">Explain XKCD page</a>)</h3>
 
-Quantum Teleportation is the concept of "teleporting" information between objects carrying Quantum State. 
+Quantum Teleportation is the concept of "teleporting" information between objects carrying Quantum State. We
+are using the term teleportation, **because the sender will lose the original information after sending it.**
+
+### Preface: Bell States
+
+In terms of how it operates, Quantum Teleportation uses a concept known as the Bell State. It can be seen
+as an entangled state of two qubits, but this entangled state has a special property best expressed by the
+following mathematical notation:
+
+<img class="img-block centered" src="img/lesson01/bell-state-math.png">
+
+In this case, the Bell State **|Φ<span class="math-exponent">+</span>⟩** shows that each state |0⟩ and |1⟩
+have equal chances of being observed, but what's interesting to observe is that, **if Qubit A is observed in a particular state, then the Qubit B will be in the same state.**
+
+Another thing to note is that there are three other Bell states, each with their own mathematical representation. They are noted **|Φ<span class="math-exponent">-</span>⟩, |ψ<span class="math-exponent">+</span>⟩ and |ψ<span class="math-exponent">-</span>⟩.** The states marked as |ψ⟩ are represented with A and B being different states, 
+like this:
+
+<img class="img-block centered" src="img/lesson01/bell-state-math-2.png">
+
+### Quantum Teleportation: The inner workings
+
+Now, to resume the explanation of Quantum Teleporation, to teleport a Qubit A to a Qubit C, we will need a
+Qubit B to act as a "middleman". **This Qubit B will be entangled with our Qubit A to create a Bell State.**
+
+
 
 ## References
 
@@ -118,35 +140,34 @@ lesson with more depth, but they may be complicated to understand.
 
 Bra-ket Notation:
 
-<!--TODO: Harvard Referencing: https://www.mybib.com/tools/harvard-referencing-generator -->
-
-- https://docs.microsoft.com/en-us/quantum/concepts/dirac-notation
-- http://www.physics.unlv.edu/~bernard/phy721_99/tex_notes/node6.html
-- https://www.physics.umd.edu/courses/Phys374/fall05/files/DiracNotation.pdf
-- https://en.wikipedia.org/wiki/Bra–ket_notation
+- Microsoft Quantum Contributors (2021). Dirac notation - Microsoft Quantum. \[online\] docs.microsoft.com. Available at: https://docs.microsoft.com/en-us/quantum/concepts/dirac-notation.
+- Bernard Zygelman. (1999). Bra-ket notation. \[online\] Available at: http://www.physics.unlv.edu/~bernard/phy721_99/tex_notes/node6.html [Accessed 10 Feb. 2021]
+- E. F. Redish. (2004). Dirac Notation. \[online\] Available at: https://www.physics.umd.edu/courses/Phys374/fall05/files/DiracNotation.pdf [Accessed 10 Feb. 2021].
+- Wikipedia Contributors (2019). Bra. \[online\] Wikipedia. Available at: https://en.wikipedia.org/wiki/Bra.
 
 Quantum Superposition:
 
-- Gmu.edu. (n. d.). Superposition Principle. \[online\] Available at: http://physics.gmu.edu/~dmaria/590%20Web%20Page/public_html/qm_topics/superposition/superposition.html [Accessed 4 Feb. 2021]
+- Gmu.edu. (n. d.). Superposition Principle. \[online\] Available at: http://physics.gmu.edu/~dmaria/590%20Web%20Page/public_html/qm_topics/superposition/superposition.html \[Accessed 4 Feb. 2021\]
 
 Quantum Entanglement:
 
-- https://www.sciencealert.com/entanglement
-- https://en.wikipedia.org/wiki/Quantum_entanglement
+- ScienceAlert Staff. (2018). What Is Quantum Entanglement? \[online\] ScienceAlert. Available at: https://www.sciencealert.com/entanglement.
+- Wikipedia Contributors (2019). Quantum entanglement. \[online\] Wikipedia. Available at: https://en.wikipedia.org/wiki/Quantum_entanglement.
 
 No-Cloning Theorem:
 
-- https://www.quantiki.org/wiki/no-cloning-theorem
-- https://inst.eecs.berkeley.edu/~cs191/fa05/lectures/lecture6_fa05.pdf
-- https://www.strathweb.com/2020/08/introduction-to-quantum-computing-with-q-part-6-no-cloning-theorem/
+- www.quantiki.org. (2015). The no-cloning theorem | Quantiki. \[online\] Available at: https://www.quantiki.org/wiki/no-cloning-theorem [Accessed 10 Feb. 2021].
+- Benenti and Casati, S. (2005). Lecture 6 1 Readings 2 No Cloning Theorem. \[online\] . Available at: https://inst.eecs.berkeley.edu/~cs191/fa05/lectures/lecture6_fa05.pdf [Accessed 10 Feb. 2021].
+- Woj, F. (2020). Introduction to quantum computing with Q# – Part 6, No-cloning theorem | StrathWeb. A free flowing web tech monologue. \[online\] Available at: https://www.strathweb.com/2020/08/introduction-to-quantum-computing-with-q-part-6-no-cloning-theorem/ [Accessed 10 Feb. 2021].
 
 Quantum Teleporation:
 
-- brilliant.org. (n.d.). Quantum Teleportation | Brilliant Math & Science Wiki. \[online\] Available at: https://brilliant.org/wiki/quantum-teleportation/ \[Accessed 3 Feb. 2021\].
-- Physics Stack Exchange. (n.d.). wavefunction - Mathematical explanation of quantum teleportation. \[online\] Available at: https://physics.stackexchange.com/questions/62794/mathematical-explanation-of-quantum-teleportation \[Accessed 3 Feb. 2021\].
+- DeCross and Satyabrata, M and D. (n.d.). Quantum Teleportation | Brilliant Math & Science Wiki. \[online\] Available at: https://brilliant.org/wiki/quantum-teleportation/ \[Accessed 3 Feb. 2021\].
+- Physics Stack Exchange. (2013). wavefunction - Mathematical explanation of quantum teleportation. \[online\] Available at: https://physics.stackexchange.com/questions/62794/mathematical-explanation-of-quantum-teleportation \[Accessed 3 Feb. 2021\].
 - Mochon, C. (2006). Introduction to Quantum Teleportation. Perimeter Institute for Theoretical Physics. \[online\] Available at: http://lightlike.com/teleport/teletalk.pdf \[Accessed 3 Feb. 2021\].
 - community.qiskit.org. (n.d.). Quantum Teleportation. \[online\] Available at: https://qiskit.org/textbook/ch-algorithms/teleportation.html \[Accessed 4 Feb. 2021\].
 - Wikipedia Contributors (2019). Quantum teleportation. \[online\] Wikipedia. Available at: https://en.wikipedia.org/wiki/Quantum_teleportation.
+- Bouwmeester, D., Pan, J.-W., Mattle, K., Eibl, M., Weinfurter, H. and Zeilinger, A. (1997). Experimental quantum teleportation. Nature, 390(6660), pp.575–579.
 
 [dirac-page]: https://en.wikipedia.org/wiki/Paul_Dirac
 [wiki-qe]: https://en.wikipedia.org/wiki/Quantum_entanglement
