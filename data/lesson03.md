@@ -70,9 +70,7 @@ The visual representation of the Controlled Not gate is as follows:
 
 <h3 class="h3-subheader">Toffoli Gate</h3>
 
-The Toffoli Gate, named after its inventor [Tommaso Toffoli][toffoli-page], or even CCNOT gate, is a gate that
-applies a Pauli X/NOT operation on a Qubit A depending on the state of Qubits B and C. 
-**The NOT operation occurs if Qubit B and C are in state |1⟩.**
+The Toffoli Gate, named after its inventor [Tommaso Toffoli][toffoli-page], or even CCNOT gate, is a gate that applies a Pauli X/NOT operation on a Qubit depending on the states of two (or more) qubits. **The NOT operation occurs only if the control qubits are in state |1⟩.**
 
 The visual representation of the Toffoli Gate is as follows:
 
