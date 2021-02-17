@@ -79,6 +79,11 @@ body {
 	font-size: 		115%;
 }
 
+/* Reset the position and appearances of references */
+#pageContents ul:last-of-type {
+	list-style: initial;
+}
+
 #siteContents {
 	transition: 0.5s all ease;
 }
@@ -129,7 +134,7 @@ body {
 	}
 
 	#siteContents.closed {
-		left: -80%;
+		left: -80vw;
 	}
 
 	#showSiteContents {

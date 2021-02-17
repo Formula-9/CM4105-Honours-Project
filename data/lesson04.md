@@ -65,13 +65,11 @@ better performance than current algorithms, but **it could also see some minor a
 
 - Beckman, D., Chari, A.N., Devabhaktuni, S. and Preskill, J. (1996). Efficient networks for quantum factoring. Physical Review A, \[online\] 54(2), pp.1034–1063. Available at: http://pra.aps.org/abstract/PRA/v54/i2/p1034_1 \[Accessed 7 Feb. 2021\].
 
-- Silva, V. and Springerlink (Online Service (2018). Practical Quantum Computing for Developers : Programming Quantum Rigs in the Cloud using Python, Quantum Assembly Language and IBM QExperience. Berkeley, Ca: Apress.
+- Silva, V. (2018). Practical Quantum Computing for Developers : Programming Quantum Rigs in the Cloud using Python, Quantum Assembly Language and IBM QExperience. Berkeley, Ca: Apress.
 
 - JMiszczak (2005). Shor’s factoring algorithm. \[online\] Quantiki. Available at: https://www.quantiki.org/wiki/shors-factoring-algorithm.
 
 - Grover, L.K. (1996). A fast quantum mechanical algorithm for database search. arXiv:quant-ph/9605043. \[online\] Available at: https://arxiv.org/abs/quant-ph/9605043.
 
-- Silva, V. and Springerlink (Online Service (2018). Practical Quantum Computing for Developers : Programming Quantum Rigs in the Cloud using Python, Quantum Assembly Language and IBM QExperience. Berkeley, Ca: Apress.
-‌
 [peter-shor]: https://en.wikipedia.org/wiki/Shor%27s_algorithm
 [lov-grover]: https://en.wikipedia.org/wiki/Lov_Grover
