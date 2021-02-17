@@ -1,27 +1,39 @@
 <h1 class="centered">An Overview of Quantum Computing</h1>
 
-## History of Quantum Computing
+## A Brief History of Quantum Computing
 
 <!-- TODO: Entire section -->
 
 ## Qubits: What are they ?
 
-<!-- TODO: Explain in more detail the concept -->
-
-Quantum Computers differ from standard computers, in the sense that **they don't use conventional bits as treatment units**. Instead, they use an unit named **Qubit**. Qubits carry a **quantum state** as information, which means that
-they are not simply 1 or 0, but they can be **|1⟩ or |0⟩**. This is a significant difference, since Qubits follow the
-rules that have been seen in Lesson 1.
+Quantum Computers differ from standard computers, in the sense that **they don't use conventional bits as treatment units**. Instead, they use an unit named **Qubit**. Qubits carry a **quantum state** as information, which means that they are not simply 1 or 0, but they can be **|1⟩ or |0⟩**. This is a significant difference, since Qubits follow the rules that have been seen in Lesson 1.
 
 Visually, a Qubit can be represented with the **Bloch's Sphere**, named after the physicist [Felix Bloch][felix-bloch]:
 
 <img class="img-block centered" src="img/lesson02/bloch-sphere.png">
 
 As we can see, a Qubit requires three axes to be represented. The Z axis on the Bloch Sphere often corresponds to
-the states **|1⟩ and |0⟩**, but the X and Y axes are just as important, since **it is possible to perform rotations around these axes, which could alter the information of the Qubit when observed.**
+the states **|1⟩ and |0⟩**, but the X and Y axes are just as important, since **it is possible to perform rotations around these axes, which could alter the probability of observing the Qubit in a given state.**
 
 ## Manipulating Qubits: Quantum Computers
 
-<!-- TODO: Entire section -->
+To manipulate Qubits in a way that we can "program", we need Quantum Computers. However, building a Quantum
+Computer is **expensive**, hence why only companies like IBM or Google, just to name them, have built some.
+
+Quantum Computers usually have a limited number of Qubits available, and this, for good reason: Qubits are
+finicky to manipulate, as they are subject to a concept known as Quantum Decoherence. Simply put,
+Quantum Decoherence is essentially **the loss of information due to the environment**. This loss of information
+can be introduced by noise, temperature, literally any factor.
+
+Because of this, it is common for Quantum Computers to manipulate Qubits at a very low temperature (usually
+**a few degrees kelvin, so close to absolute zero**), in order to minimize the potential factors that can
+induce noise/decoherence in the Qubit's environment. However, potential breakthroughs and advances may allow
+Quantum Computers to operate at higher temperatures in the future.
+
+To get back to the usefulness of Quantum Computers, their main advantage is that they can be programmed with
+Quantum Circuits. These circuits, which are made out of Quantum Gates, manipulate the Qubits that go through
+them, altering their state according to the logic of each gate they encounter. In a way, this means that 
+**it is possible to use Quantum Circuits to create the quantum computer equivalent of algorithms.**
 
 ## Another form of Quantum Computing: Quantum Annealers 
 
@@ -46,15 +58,16 @@ group Quantum Annealing and Quantum Computing together.
 
 ## References
 
-Qubits and Bloch Sphere:
-
 - Wikipedia Contributors (2020). Bloch sphere. \[online\] Wikipedia. Available at: https://en.wikipedia.org/wiki/Bloch_sphere.
 
-Quantum Computers:
+- Ono, K., Mori, T. and Moriyama, S. (2019). High-temperature operation of a silicon qubit. Scientific Reports, \[online\] 9(1). Available at: https://arxiv.org/ftp/arxiv/papers/1804/1804.03364.pdf [Accessed 14 Feb. 2021].
 
-Quantum Annealers:
+- Krinner, S., Storz, S., Kurpiers, P., Magnard, P., Heinsoo, J., Keller, R., Lütolf, J., Eichler, C. and Wallraff, A. (2019). Engineering cryogenic setups for 100-qubit scale superconducting circuit systems. EPJ Quantum Technology, 6(1). Available at: https://doi.org/10.1140/epjqt/s40507-019-0072-0 [Accessed 14 Feb. 2021].
 
 - Ruiz, A.D.L.F., 2014. Quantum annealing. arXiv preprint arXiv:1404.2465. Available at: https://arxiv.org/abs/1404.2465
+
 - docs.dwavesys.com. (n.d.). Introduction to Quantum Annealing — D-Wave System Documentation documentation. \[online\] Available at: https://docs.dwavesys.com/docs/latest/c_gs_2.html.
+
+- Farahzad, M. you.stonybrook.edu. (n.d.). 3. A Light Introduction to Bloch Sphere – Quantum Computing. \[online\] Available at: https://you.stonybrook.edu/qcomputing/2018/07/06/bloch-sphere/ \[Accessed 17 Feb. 2021\].
 
 [felix-bloch]: https://en.wikipedia.org/wiki/Felix_Bloch

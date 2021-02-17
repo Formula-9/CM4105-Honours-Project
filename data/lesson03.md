@@ -64,17 +64,29 @@ but **if Qubit A is in state |0⟩, Qubit B will not be altered**.
 
 <!-- TODO: Add a mathematical description of Controlled Not Gate -->
 
+The visual representation of the Controlled Not gate is as follows:
+
+<img class="img-block centered" src="img/lesson03/cnot-gate.png">
+
 <h3 class="h3-subheader">Toffoli Gate</h3>
 
 The Toffoli Gate, named after its inventor [Tommaso Toffoli][toffoli-page], or even CCNOT gate, is a gate that
 applies a Pauli X/NOT operation on a Qubit A depending on the state of Qubits B and C. 
 **The NOT operation occurs if Qubit B and C are in state |1⟩.**
 
+The visual representation of the Toffoli Gate is as follows:
+
+<img class="img-block centered" src="img/lesson03/toffoli-gate.png">
+
 <h3 class="h3-subheader">Swap Gate</h3>
 
 The Swap Gate, as its name implies, is a gate affecting two Qubits A and B, and exchange their states.
 
-<!-- TODO: Add a mathematical description of Swap Gate -->
+The visual representation is as follows:
+<img class="img-block centered" src="img/lesson03/swap-gate.png">
+
+And the mathematical representation is as follows:
+<img class="img-block centered" src="img/lesson03/swap-math.png">
 
 <h3 class="h3-subheader">S and S<span class="math-formula math-exponent">†</span> Gate</h3>
 
@@ -87,15 +99,15 @@ The visual representation of the S and S<span class="math-formula math-exponent"
 <img class="img-block centered" src="img/lesson03/s-gate.png">
 <img class="img-block centered" src="img/lesson03/s-dagger-gate.png">
 
-<!-- TODO: Add a mathematical description of each Gate -->
+The mathematical representation of the gates are as follows:
+
+<img class="img-block centered" src="img/lesson03/s-gate-math.png">
 
 <h3 class="h3-subheader">T and T<span class="math-formula math-exponent">†</span> Gate</h3>
 
 The T gate is a gate that operates on a single Qubit, and causes said Qubit to perform a 45 degrees (π/4 radians) rotation on the Z-axis. Inversely, the T<span class="math-formula math-exponent">†</span> gate represents a negative rotation, much like the relation between S and S<span class="math-formula math-exponent">†</span>.
 
-Due to its nature, it is possible to define the operation performed by the S gate with the T operator as follows:
-
-<!-- TODO: Add a mathematical description of each Gate -->
+Due to its nature, it is possible to define the operation performed by the S gate with the T operator as **S = T<span class="math-formula math-exponent">2</span>**
 
 The graphical representation of the T and T<span class="math-formula math-exponent">†</span> gates are:
 
@@ -104,23 +116,14 @@ The graphical representation of the T and T<span class="math-formula math-expone
 
 ## References:
 
-Hadamard Gate:
-
 - Chatterjee, A., 2003. Introduction to quantum computation. arXiv preprint quant-ph/0312111. Available at: https://arxiv.org/abs/quant-ph/0312111
 
-Pauli X Gate:
+- Voorhoede, D. (n.d.). The basics of Quantum Computing. \[online\] Quantum Inspire. Available at: https://www.quantum-inspire.com/kbase/introduction-to-quantum-computing/.
 
-- [Quantum Inspire: Pauli X Gate][qi-pauli-xgate]
+- Khammassi, N., Guerreschi, G., Ashraf, I., Hogaboam, J., Almudever, C. and Bertels, K. (n.d.). cQASM v1.0 Towards a Common Quantum Assembly Language. \[online\] . Available at: https://arxiv.org/pdf/1805.09607.pdf [Accessed 14 Feb. 2021].
 
-Controlled Not Gate:
-
-- [Quantum Inspire: Controlled Not Gate][qi-cnot-gate]
+- Khammassi, N., Ashraf, I., Fu, X., Almudever, C.G. and Bertels, K., 2017, March. QX: A high-performance quantum computer simulation platform. In Design, Automation & Test in Europe Conference & Exhibition (DATE), 2017 (pp. 464-469). IEEE. \[online\] . Available at: https://ieeexplore.ieee.org/iel7/7919927/7926947/07927034.pdf?casa_token=HryfxkIz0EsAAAAA:ybg-q79ioU9m5Ep5Py2RY7-rXxGPwyM6HlHaVpy5aTJPiCiPX3eiXwc0aGTyc7KRnXAudvIc4VM7 [Accessed 14 Feb. 2021].
 
 [w-pauli]: https://en.wikipedia.org/wiki/Wolfgang_Pauli
 [pauli-matrices]: https://en.wikipedia.org/wiki/Pauli_matrices
-
-[qi-pauli-xgate]: https://www.quantum-inspire.com/kbase/pauli-x/
-
-[qi-cnot-gate]: https://www.quantum-inspire.com/kbase/cnot/
-
 [toffoli-page]: https://en.wikipedia.org/wiki/Tommaso_Toffoli
