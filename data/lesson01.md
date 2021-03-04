@@ -2,18 +2,11 @@
 
 ## Why Quantum Mechanics ?
 
-This is a commonly asked question: why would knowledge of Quantum Mechanics be
-required to understand Quantum Computing ? The reason for that is, Quantum
-Computing involves Quantum Mechanics for almost everything. Understanding at
-the very least the basics allows to understand how Quantum Computer work,
-hence why the basics have to be covered. Through the lessons, if needed,
-explanation and vulgarization of these concepts will be given in order to be
-easier to understand.
+This is a commonly asked question: why would knowledge of Quantum Mechanics be required to understand Quantum Computing ? The reason for that is, Quantum Computing involves Quantum Mechanics for almost everything. Understanding at the very least the basics allows to understand how Quantum Computer work, hence why the basics have to be covered. Through the lessons, if needed, explanation and vulgarization of these concepts will be given in order to be easier to understand.
 
 <img class="img-block centered" src="img/lesson01/xkcd-0.png">
 
 <h3 class="img-caption centered">(Source: <a href="https://xkcd.com/1861/">XKCD #1861: Quantum</a>, the relevant <a href="https://www.explainxkcd.com/wiki/index.php/1861:_Quantum">Explain XKCD page</a> is also worth a read)</h3>
-
 
 ## Dirac's Bra-Ket Notation
 
@@ -21,20 +14,15 @@ Quantum Mechanics starts by adding a new notation: [Paul Dirac][dirac-page]'s Br
 
 <img class="img-block centered" src="img/lesson01/dirac_notation.png">
 
-In the previous example, **⟨𝑎|** is known as a **Bra**, and **|𝑏⟩** is known as a **Ket**.
-Essentially, they are **vectors**. However, there is a difference between a Bra and a Ket.
-Their difference can be expressed mathematically by the following expression:
+In the previous example, **⟨𝑎|** is known as a **Bra**, and **|𝑏⟩** is known as a **Ket**. Essentially, they are **vectors**. However, there is a difference between a Bra and a Ket. Their difference can be expressed mathematically by the following expression:
 
 <img class="img-block centered" src="img/lesson01/bra_ket_relation.png">
 
-The <span class="math-formula math-exponent">†</span> symbol is known as the **conjugate transpose** operator.
-It transposes a vector/matrix, and replaces each entry with their complex conjugate. Let us
-see an example of what it means:
+The <span class="math-formula math-exponent">†</span> symbol is known as the **conjugate transpose** operator. It transposes a vector/matrix, and replaces each entry with their complex conjugate. Let us see an example of what it means:
 
 <img class="img-block centered" src="img/lesson01/dagger_example.png">
 
-In addition to this notation, bra and kets have other properties. For instance, let us see how
-their inner product behave with the following example:
+In addition to this notation, bra and kets have other properties. For instance, let us see how their inner product behave with the following example:
 
 <img class="img-block centered" src="img/lesson01/bra_ket_inner_product.png">
 
@@ -44,56 +32,56 @@ Bra and Kets also have the concept of **outer product**. The outer product of a 
 
 <img class="img-block centered" src="img/lesson01/outer_product_example.png">
 
-However, stating that the outer product of a ket and a bra is a simple matrix multiplication would be false.
-An outer product is mathematically defined as the following operation:
+However, stating that the outer product of a ket and a bra is a simple matrix multiplication would be false. An outer product is mathematically defined as the following operation:
 
 <img class="img-block centered" src="img/lesson01/outer_product_math.png">
 
-The notation makes sense, we know that a bra is essentially the conjugate transpose of a ket, so saying
-that ket-bra is the is essentially the multiplication of a ket with a ket's conjugate transpose is true. 
+The notation makes sense, we know that a bra is essentially the conjugate transpose of a ket, so saying that ket-bra is the is essentially the multiplication of a ket with a ket's conjugate transpose is true.
 
-The last mathematical operator that will be explained is the **Tensor operator**. This is often called
-direct product or Carthesian product, and it is defined as follows:
+The last mathematical operator that will be explained is the **Tensor operator**. This is often called direct product or Carthesian product, and it is defined as follows:
 
 <img class="img-block centered" src="img/lesson01/carthesian-product.png">
 
-As we can see, it basically allows us to create multiple-state vectors. This property is useful since it
-is required to understand some of the later concepts seen in Quantum Mechanics (and by extension, Quantum Computing).
+As we can see, it basically allows us to create multiple-state vectors. This property is useful since it is required to understand some of the later concepts seen in Quantum Mechanics (and by extension, Quantum Computing).
 
 ## Quantum Superposition
 
-Now we have the mathematical building blocks required to understand more advanced concepts that use the
-bra-ket notation. Let us start with the concept of Quantum Superposition. Quantum Superposition could
-be defined as the idea that a system with ***n*** states **is in all the possible states at the same time, until observed**. The observation of the system causes a phenomenon known as **collapse**, which will make the system "select" one of the possible states.
+Now we have the mathematical building blocks required to understand more advanced concepts that use the bra-ket notation. Let us start with the concept of Quantum Superposition. Quantum Superposition could be defined as the idea that a system with **_n_** states **is in all the possible states at the same time, until observed**. The observation of the system causes a phenomenon known as **collapse**, which will make the system "select" one of the possible states.
 
-Of course, it is possible for all the states to have probabilities to appear. These probabilities will be
-expressed as eigenvalues, and the states will be expressed as eigenvectors. A clearer example would be a system
-***S*** with three possible states: ***A***, ***B*** and ***C***. We will consider c<span class="math-subscript">0</span>, c<span class="math-subscript">1</span> and c<span class="math-subscript">2</span> the respective eigenvalues defining the probabilities for A, B and C to be observed. We can then express our system as the **|Ψ⟩** vector as follows:
+Of course, it is possible for all the states to have probabilities to appear. These probabilities will be expressed as eigenvalues, and the states will be expressed as eigenvectors. A clearer example would be a system **_S_** with three possible states: **_A_**, **_B_** and **_C_**. We will consider c<span class="math-subscript">0</span>, c<span class="math-subscript">1</span> and c<span class="math-subscript">2</span> the respective eigenvalues defining the probabilities for A, B and C to be observed. We can then express our system as the **|Ψ⟩** vector as follows:
 
 <img class="img-block centered" src="img/lesson01/superposition-math.png">
 
 ## Quantum Entanglement and No-Cloning Theorem
 
-Quantum Entanglement is defined on [Wikipedia][wiki-qe] by the following definition: 
+Quantum Entanglement is defined on [Wikipedia][wiki-qe] by the following definition:
 
-*«Quantum entanglement is a physical phenomenon that occurs when a pair or group of particles is generated, interact, or share spatial proximity in a way such that the quantum state of each particle of the pair or group cannot be described independently of the state of the others, including when the particles are separated by a large distance.»*
+_«Quantum entanglement is a physical phenomenon that occurs when a pair or group of particles is generated, interact, or share spatial proximity in a way such that the quantum state of each particle of the pair or group cannot be described independently of the state of the others, including when the particles are separated by a large distance.»_
 
 A simpler definition could be made from this verbose description. To explain the concept from another point of view, imagine participating in one of these TV shows. You are asked to pick between two doors. Each door has a prize behind it, but the value of the prizes are different: one has a prize that is worth a lot of money and the other is close to worthless.
 
 Thing is, you don't which prize what is behind each door. In a way, this is **Quantum Entanglement**. Why ? Because opening a door would **reveal the state of a door, and you would be able to reveal the state of the other door**. So their states are dependent, and even if the second door was in another galaxy, opening the door in front of you would still reveal the other door's state.
 
 With this comes an important theorem of Quantum Mechanics: the **No-Cloning Theorem**. It explains that it is
-impossible to clone a quantum state properly. To demonstrate it, let us imagine a quantum state **|𝑎⟩** and a second quantum state **|b⟩**. Now, let us imagine the existence of a theoretical function we will note as **𝐶**, that is defined as follows:
+impossible to clone a quantum state properly. To demonstrate it, let us imagine a quantum state **|𝑎⟩** and a second quantum state **|𝑏⟩**. Now, let us imagine the existence of a theoretical function we will note as **𝐶**, that is defined as follows:
 
 <img class="img-block centered" src="img/lesson01/no-cloning-function.png">
 
-**𝐶** being an unitary operation, the following must be true:
+Of course, we are going to assume that **C** implements the above transformation for any state a and b in the Hilbert space. Now, let us take the inner product of such an expression:
+
+<img class="img-block centered" src="img/lesson01/no-cloning-inner-product.png">
+
+However, **𝐶** being an unitary operation, the following must be true:
 
 <img class="img-block centered" src="img/lesson01/unitary-clone.png">
 
-And therefore, we obtain the following proof:
+So, we obtain the following result:
 
-<!-- TODO: Mathematical formula, simplify and explain ! -->
+<img class="img-block centered" src="img/lesson01/no-cloning-proof.png">
+
+And **⟨𝑎|𝑏⟩ = ⟨𝑎|𝑏⟩²** only has two solutions: **⟨𝑎|𝑏⟩ = 0** and **⟨𝑎|𝑏⟩ = 1**, which contradicts the entire concept of an operation being able to clone any state.
+
+As a side explanation, this can also be explained by the fact that, if we wanted to copy Quantum information from a Qubit, we would need to observe it. However, doing so would cause the collapse of the system and therefore, a loss of information would occur, which is a consequence of the collapse.
 
 ## Quantum Teleportation
 
@@ -112,22 +100,35 @@ In terms of how it operates, Quantum Teleportation uses a concept known as the B
 In this case, the Bell State **|Φ<span class="math-exponent">+</span>⟩** shows that each state |0⟩ and |1⟩
 have equal chances of being observed, but what's interesting to observe is that, **if Qubit A is observed in a particular state, then the Qubit B will be in the same state.**
 
-Another thing to note is that there are three other Bell states, each with their own mathematical representation. They are noted **|Φ<span class="math-exponent">-</span>⟩, |ψ<span class="math-exponent">+</span>⟩ and |ψ<span class="math-exponent">-</span>⟩.** The states marked as |ψ⟩ are represented with A and B being different states,  like this:
+Another thing to note is that there are three other Bell states, each with their own mathematical representation. They are noted **|Φ<span class="math-exponent">-</span>⟩, |ψ<span class="math-exponent">+</span>⟩ and |ψ<span class="math-exponent">-</span>⟩.** The states marked as |ψ⟩ are represented with A and B being different states, like this:
 
 <img class="img-block centered" src="img/lesson01/bell-state-math-2.png">
 
 ### Quantum Teleportation: The inner workings
 
-Now, to resume the explanation of Quantum Teleporation, to teleport a Qubit A to a Qubit C, we will need a Qubit B to act as a "middleman". **This Qubit B will be entangled with our Qubit A to create a Bell State.**
+Now, to resume the explanation of Quantum Teleporation, to teleport a Qubit A to a Qubit C, we will need a Qubit B to act as a "middleman". But we will also need two classical bits.
 
-<!-- TODO: Continue this section -->
+First, **we consider B and C to be initialized with states |0⟩**. **We then apply a Hadamard Gate to Qubit B, and we allow Qubit B to apply a NOT gate to C if it is in state |1⟩**. Don't be scared by the concept of gates, these will be explained later. What matters is that **we end up with an entangled state, more precisely, a Bell state**.
+
+The mathematical expression for the state of our qubits B and C is the following at this point:
+
+<img class="img-block centered" src="img/lesson01/quantum-teleportation-step-1.png">
+
+Our two Qubits are now symmetrical, so the next step can be done either on B or C. For the sake of clarity, we will operate on B. **We allow Qubit A to apply a NOT gate to B if it is in state |1⟩, and then, we apply a Hadamard gate on A. Then, we measure Qubit A's Z-Axis value and Qubit B's X-axis value. The result of these measurements will be stored in classical bits.**
+
+These two classical bits are then used to alter Qubit C. If we consider Bit 1 to be the result of the measurement of Qubit A's Z-Axis, and Bit 2 to be the result of the measurement of Qubit B's X-Axis, then, we get the following operation table:
+
+- 00 -> Do nothing.
+- 01 -> Apply a Pauli X Gate to the Qubit.
+- 10 -> Apply a Pauli Z Gate to the Qubit.
+- 11 -> Apply both Pauli (X and Z) Gates to the Qubit.
+
+Once these operations have been applied, Qubit C will be in the state Qubit A was originally in, therefore the information has been teleported.
 
 ## References
 
 If something seems unclear, these resources might be worth a read, they detail the subjects covered by this
 lesson with more depth, but they may be complicated to understand.
-
-Bra-ket Notation:
 
 - Microsoft Quantum Contributors (2021). Dirac notation - Microsoft Quantum. \[online\] docs.microsoft.com. Available at: https://docs.microsoft.com/en-us/quantum/concepts/dirac-notation.
 
@@ -145,6 +146,8 @@ Bra-ket Notation:
 
 - www.quantiki.org. (2015). The no-cloning theorem | Quantiki. \[online\] Available at: https://www.quantiki.org/wiki/no-cloning-theorem [Accessed 10 Feb. 2021].
 
+- The No-cloning theorem. \[online\] einsteinrelativelyeasy.com. Available at: https://einsteinrelativelyeasy.com/index.php/dictionary/165-the-no-cloning-theorem \[Accessed 1 Mar. 2021\].
+
 - Benenti and Casati, S. (2005). Lecture 6 1 Readings 2 No Cloning Theorem. \[online\] . Available at: https://inst.eecs.berkeley.edu/~cs191/fa05/lectures/lecture6_fa05.pdf [Accessed 10 Feb. 2021].
 
 - Woj, F. (2020). Introduction to quantum computing with Q# – Part 6, No-cloning theorem | StrathWeb. A free flowing web tech monologue. \[online\] Available at: https://www.strathweb.com/2020/08/introduction-to-quantum-computing-with-q-part-6-no-cloning-theorem/ [Accessed 10 Feb. 2021].
@@ -160,6 +163,10 @@ Bra-ket Notation:
 - Wikipedia Contributors (2019). Quantum teleportation. \[online\] Wikipedia. Available at: https://en.wikipedia.org/wiki/Quantum_teleportation.
 
 - Bouwmeester, D., Pan, J.-W., Mattle, K., Eibl, M., Weinfurter, H. and Zeilinger, A. (1997). Experimental quantum teleportation. Nature, 390(6660), pp.575–579.
+
+- Brassard, G., Braunstein, S.L. and Cleve, R. (1998). Teleportation as a quantum computation. Physica D: Nonlinear Phenomena, \[online\] 120(1-2), pp.43–47. Available at: https://arxiv.org/pdf/quant-ph/9605035.pdf \[Accessed 27 Feb. 2021\].
+
+- Matuschak, A. and Nielsen, M. (2019). How quantum teleportation works. quantum.country. \[online\] Available at: https://quantum.country/teleportation \[Accessed 27 Feb. 2021\].
 
 [dirac-page]: https://en.wikipedia.org/wiki/Paul_Dirac
 [wiki-qe]: https://en.wikipedia.org/wiki/Quantum_entanglement

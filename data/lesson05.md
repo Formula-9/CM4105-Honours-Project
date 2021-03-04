@@ -45,7 +45,7 @@ for when said better Quantum Computers will be available: **Post-Quantum Cryptog
 
 - Pirandola, S., Andersen, U., Banchi, L., Berta, M., Bunandar, D., Colbeck, R., Englund, D., Gehring, T., Lupo, C., Ottaviani, C., Pereira, J., Razavi, M., Shaari, J., Tomamichel, M., Usenko, V., Vallone, G., Villoresi, P. and Wallden, P. (2019). Advances in Quantum Cryptography. \[online\] . Available at: https://arxiv.org/pdf/1906.01645.pdf.
 
-‌- Gisin, N., Ribordy, G., Tittel, W. and Zbinden, H. (101AD). Quantum cryptography. \[online\] . Available at: https://arxiv.org/pdf/quant-ph/0101098.pdf [Accessed 15 Feb. 2021].
+- Gisin, N., Ribordy, G., Tittel, W. and Zbinden, H. (101AD). Quantum cryptography. \[online\]. Available at: https://arxiv.org/pdf/quant-ph/0101098.pdf. \[Accessed 15 Feb. 2021\].
 
 - Yin, J., Li, Y.-H., Liao, S.-K., Yang, M., Cao, Y., Zhang, L., Ren, J.-G., Cai, W.-Q., Liu, W.-Y., Li, S.-L., Shu, R., Huang, Y.-M., Deng, L., Li, L., Zhang, Q., Liu, N.-L., Chen, Y.-A., Lu, C.-Y., Wang, X.-B. and Xu, F. (2020). Entanglement-based secure quantum cryptography over 1,120 kilometres. Nature, 582(7813), pp.501–505.
 

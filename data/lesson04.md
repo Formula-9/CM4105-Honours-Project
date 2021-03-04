@@ -19,11 +19,11 @@ like classical algorithms, they are impossible to predict, again due to the rand
 
 Let us start with an algorithm that has mathematical usage: the Deutsche-Jozsa algorithm. Named after its
 two creators David Deutsche and Richard Jozsa, its use is to determine if a binary function (a function
-returning either 0 or 1) is constant or balanced. 
+returning either 0 or 1) is constant or balanced.
 
 The main reason why a quantum implementation is better for this algorithm is because of the number of
 iterations required to determine the nature of the function. On a standard computer, to determine the
-nature of the function, if we consider that the function take ***n*** parameters, it would then take
+nature of the function, if we consider that the function take **_n_** parameters, it would then take
 **2**<span class="math-formula math-exponent">n-1</span>**+1** iterations. However, with a Quantum Computer, and the Quantum version of this algorithm, a single iteration is enough to determine the nature of the function.
 
 A visual representation of the algorithm as a circuit is as follows:
@@ -46,7 +46,7 @@ What makes this algorithm important is that due to its capacity to factor big in
 Of course, in order to factor integers as big as the RSA integers, quantum computers with high amounts of Qubits
 would be required, and quantum decoherence could also be a challenge to the algorithm's execution.
 
-<!--TODO: Section: How does it work ? + Implementation of the algorithm (Circuit) -->
+<!--TODO: Section: How does it work ? -->
 
 ## Grover's Algorithm
 
@@ -56,6 +56,12 @@ As a result of this property, Grover's Algorithm could find applications in data
 better performance than current algorithms, but **it could also see some minor applications to attack symmetric-key systems, since it could be used to search for the keys used to encrypt messages.** But, in the latter case, more efficient algorithms exist.
 
 <!--TODO: Implementation of the algorithm (Circuit) -->
+
+## The Quantum Fourier Transform
+
+The Quantum Fourier Transform is a useful building block that some Quantum Algorithms may use, or not; but regardless, it still remains an interesting quantum algorithm, because of the speed-up it provides over its classical (Fast Fourier Transform) counterpart. Indeed, a QFT implementation can be realized in O(N log(N)) quantum operations, whereas the FFT classical counterpart takes O(N²) operations.
+
+<!-- TODO: QFT Section -->
 
 ## References
 

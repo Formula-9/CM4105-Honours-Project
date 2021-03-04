@@ -58,11 +58,11 @@ The visual representation of the gate is as follows:
 
 <h3 class="h3-subheader">Controlled Not Gate</h3>
 
-The CNOT (Controlled Not) Gate, applies a Pauli X/NOT operation on a Qubit A depending on the state of a Qubit B.
-More precisely, **if Qubit A is in state |1⟩, the Pauli X/NOT operation is applied to Qubit B**,
-but **if Qubit A is in state |0⟩, Qubit B will not be altered**.
+The CNOT (Controlled Not) Gate, applies a Pauli X/NOT operation on a Qubit A depending on the state of a Qubit B More precisely, **if Qubit A is in state |1⟩, the Pauli X/NOT operation is applied to Qubit B**, but **if Qubit A is in state |0⟩, Qubit B will not be altered**.
 
-<!-- TODO: Add a mathematical description of Controlled Not Gate -->
+The matrix representation of the Controlled Not gate is the following:
+
+<img class="img-block centered" src="img/lesson03/cnot-math.png">
 
 The visual representation of the Controlled Not gate is as follows:
 

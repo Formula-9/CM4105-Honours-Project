@@ -9,6 +9,8 @@
 	],
 	"labNames": [
 		"Setting up a Qiskit Environment",
-		"Creating Quantum Circuits with Qiskit"
+		"Creating Quantum Circuits with Qiskit",
+		"Quantum Algorithms with Qiskit",
+		"Bonus: QASM and variants"
 	]
 }
