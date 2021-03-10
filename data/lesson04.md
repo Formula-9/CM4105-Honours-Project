@@ -15,16 +15,15 @@ to the behaviour demonstrated by Qubits.
 Additionally, Quantum Algorithms have another property not found in classical algorithms: **Quantum Algorithms are non-deterministic**. This means that while Quantum Algorithms are supposed to follow a set of rules, much
 like classical algorithms, they are impossible to predict, again due to the random nature of Qubits.
 
+## The Quantum Fourier Transform
+
+The Quantum Fourier Transform is a useful building block that some Quantum Algorithms may use, or not; but regardless, it still remains an interesting quantum algorithm, because of the speed-up it provides over its classical (Fast Fourier Transform) counterpart. Indeed, a QFT implementation can be realized in O(N log(N)) quantum operations, whereas the FFT classical counterpart takes O(N²) operations.
+
 ## The Deutsche-Jozsa Algorithm
 
-Let us start with an algorithm that has mathematical usage: the Deutsche-Jozsa algorithm. Named after its
-two creators David Deutsche and Richard Jozsa, its use is to determine if a binary function (a function
-returning either 0 or 1) is constant or balanced.
+Named after its two creators David Deutsche and Richard Jozsa, the Deutsche-Jozsa algorithm is used to determine if a binary function (a function returning either 0 or 1) is constant or balanced.
 
-The main reason why a quantum implementation is better for this algorithm is because of the number of
-iterations required to determine the nature of the function. On a standard computer, to determine the
-nature of the function, if we consider that the function take **_n_** parameters, it would then take
-**2**<span class="math-formula math-exponent">n-1</span>**+1** iterations. However, with a Quantum Computer, and the Quantum version of this algorithm, a single iteration is enough to determine the nature of the function.
+The main reason why a quantum implementation is better for this algorithm is because of the number of iterations required to determine the nature of the function. On a standard computer, to determine the nature of the function, if we consider that the function take **_n_** parameters, it would then take **2**<span class="math-formula math-exponent">n-1</span>**+1** iterations. However, with a Quantum Computer, and the Quantum version of this algorithm, a single iteration is enough to determine the nature of the function.
 
 A visual representation of the algorithm as a circuit is as follows:
 
@@ -38,15 +37,9 @@ Let us analyze this circuit. The first line represents the input to the function
 The next algorithm is made by [Peter Shor][peter-shor], and is another algorithm that has a speed advantage over
 its classical implementations. **Shor's Algorithm is a Quantum Algorithm used for integer factorization.**
 
-To illustrate the difference in time complexity, Shor's algorithm is estimated to have a time complexity of
-O(log(n<span class="math-formula math-exponent">3</span>)), whereas a classical equivalent, the Number Field Sieve
-has an estimated time complexity of O (exp(1.9\*log(n<span class="math-formula math-exponent">1/3</span>)\*log(log(n))<span class="math-formula math-exponent">2/3</span>).
+To illustrate the difference in time complexity, Shor's algorithm is estimated to have a time complexity of O(log(n<span class="math-formula math-exponent">3</span>)), whereas a classical equivalent, the Number Field Sieve has an estimated time complexity of O (exp(1.9\*log(n<span class="math-formula math-exponent">1/3</span>)\*log(log(n))<span class="math-formula math-exponent">2/3</span>).
 
-What makes this algorithm important is that due to its capacity to factor big integers quicker than standard computers, **it could be used to break public-key cryptography systems, such as the SHA family of algorithms.**
-Of course, in order to factor integers as big as the RSA integers, quantum computers with high amounts of Qubits
-would be required, and quantum decoherence could also be a challenge to the algorithm's execution.
-
-<!--TODO: Section: How does it work ? -->
+What makes this algorithm important is that due to its capacity to factor big integers quicker than standard computers, **it could be used to break public-key cryptography systems, such as the SHA family of algorithms.** Of course, in order to factor integers as big as the RSA integers, quantum computers with high amounts of Qubits would be required, and quantum decoherence could also be a challenge to the algorithm's execution.
 
 ## Grover's Algorithm
 
@@ -55,27 +48,19 @@ Another useful algorithm is Grover's Algorithm, named after [Lov Grover][lov-gro
 As a result of this property, Grover's Algorithm could find applications in database systems, as it could provide
 better performance than current algorithms, but **it could also see some minor applications to attack symmetric-key systems, since it could be used to search for the keys used to encrypt messages.** But, in the latter case, more efficient algorithms exist.
 
-<!--TODO: Implementation of the algorithm (Circuit) -->
-
-## The Quantum Fourier Transform
-
-The Quantum Fourier Transform is a useful building block that some Quantum Algorithms may use, or not; but regardless, it still remains an interesting quantum algorithm, because of the speed-up it provides over its classical (Fast Fourier Transform) counterpart. Indeed, a QFT implementation can be realized in O(N log(N)) quantum operations, whereas the FFT classical counterpart takes O(N²) operations.
-
-<!-- TODO: QFT Section -->
-
 ## References
 
-- community.qiskit.org. (n.d.). Deutsch-Jozsa Algorithm. \[online\] Available at: https://qiskit.org/textbook/ch-algorithms/deutsch-jozsa.html [Accessed 3 Feb. 2021].
+-   community.qiskit.org. (n.d.). Deutsch-Jozsa Algorithm. \[online\] Available at: https://qiskit.org/textbook/ch-algorithms/deutsch-jozsa.html [Accessed 3 Feb. 2021].
 
-- Voorhoede, D. (n.d.). Code example: Deutsch-Jozsa algorithm. \[online\] Quantum Inspire. Available at: https://www.quantum-inspire.com/kbase/deutsch-jozsa-algorithm/ \[Accessed 3 Feb. 2021\].
+-   Voorhoede, D. (n.d.). Code example: Deutsch-Jozsa algorithm. \[online\] Quantum Inspire. Available at: https://www.quantum-inspire.com/kbase/deutsch-jozsa-algorithm/ \[Accessed 3 Feb. 2021\].
 
-- Beckman, D., Chari, A.N., Devabhaktuni, S. and Preskill, J. (1996). Efficient networks for quantum factoring. Physical Review A, \[online\] 54(2), pp.1034–1063. Available at: http://pra.aps.org/abstract/PRA/v54/i2/p1034_1 \[Accessed 7 Feb. 2021\].
+-   Beckman, D., Chari, A.N., Devabhaktuni, S. and Preskill, J. (1996). Efficient networks for quantum factoring. Physical Review A, \[online\] 54(2), pp.1034–1063. Available at: http://pra.aps.org/abstract/PRA/v54/i2/p1034_1 \[Accessed 7 Feb. 2021\].
 
-- Silva, V. (2018). Practical Quantum Computing for Developers : Programming Quantum Rigs in the Cloud using Python, Quantum Assembly Language and IBM QExperience. Berkeley, Ca: Apress.
+-   Silva, V. (2018). Practical Quantum Computing for Developers : Programming Quantum Rigs in the Cloud using Python, Quantum Assembly Language and IBM QExperience. Berkeley, Ca: Apress.
 
-- JMiszczak (2005). Shor’s factoring algorithm. \[online\] Quantiki. Available at: https://www.quantiki.org/wiki/shors-factoring-algorithm.
+-   JMiszczak (2005). Shor’s factoring algorithm. \[online\] Quantiki. Available at: https://www.quantiki.org/wiki/shors-factoring-algorithm.
 
-- Grover, L.K. (1996). A fast quantum mechanical algorithm for database search. arXiv:quant-ph/9605043. \[online\] Available at: https://arxiv.org/abs/quant-ph/9605043.
+-   Grover, L.K. (1996). A fast quantum mechanical algorithm for database search. arXiv:quant-ph/9605043. \[online\] Available at: https://arxiv.org/abs/quant-ph/9605043.
 
 [peter-shor]: https://en.wikipedia.org/wiki/Shor%27s_algorithm
 [lov-grover]: https://en.wikipedia.org/wiki/Lov_Grover
