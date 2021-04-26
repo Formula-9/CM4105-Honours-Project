@@ -37,7 +37,7 @@ Let us analyze this circuit. The first line represents the input to the function
 The next algorithm is made by [Peter Shor][peter-shor], and is another algorithm that has a speed advantage over
 its classical implementations. **Shor's Algorithm is a Quantum Algorithm used for integer factorization.**
 
-To illustrate the difference in time complexity, Shor's algorithm is estimated to have a time complexity of O(log(n<span class="math-formula math-exponent">3</span>)), whereas a classical equivalent, the Number Field Sieve has an estimated time complexity of O (exp(1.9\*log(n<span class="math-formula math-exponent">1/3</span>)\*log(log(n))<span class="math-formula math-exponent">2/3</span>).
+To illustrate the difference in time complexity, Shor's algorithm is estimated to have a time complexity of O(log(n<span class="math-formula math-exponent">3</span>)), whereas a classical equivalent, the Number Field Sieve has an estimated time complexity of O(exp(1.9\*log(n<span class="math-formula math-exponent">1/3</span>)\*log(log(n))<span class="math-formula math-exponent">2/3</span>).
 
 What makes this algorithm important is that due to its capacity to factor big integers quicker than standard computers, **it could be used to break public-key cryptography systems, such as the SHA family of algorithms.** Of course, in order to factor integers as big as the RSA integers, quantum computers with high amounts of Qubits would be required, and quantum decoherence could also be a challenge to the algorithm's execution.
 

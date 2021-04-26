@@ -6,13 +6,17 @@ Another domain that could see benefits from Quantum Computing in the future is M
 
 The basis for this explanation is that Quantum Computer Scientists hope that, in the future, it could possible to leverage Quantum Information Processing to get a speed/resource advantage over traditional Machine Learning implementations.
 
+To explain the speed advantage that Quantum Computers could offer over classical computers when performing machine learning, we have to remember that Quantum Computers are able to perform and solve mathematical problems faster than their classical counterparts, as an example, remember that Shor's algorithm is able to factorize big numbers in O(log(n<span class="math-formula math-exponent">3</span>)) time, whereas the Number Field Sieve has an estimated complexity of O(exp(1.9\*log(n<span class="math-formula math-exponent">1/3</span>)\*log(log(n))<span class="math-formula math-exponent">2/3</span>), meaning that in a domain with complex mathematical computations such as Machine Learning, using Quantum Computers could potentially yield interesting results when it comes to speed.
+
+However, with this speed advantage comes an issue: data would have to be encoded into Quantum States. Considering most of the models used in classical Machine Learning are built with bits, we would have to find a way to encode them into their quantum counterpart in order to try and leverage the benefits of Quantum Machine Learning.
+
+With this said, let us take a look at the advances in Quantum Machine Learning, by examining some algorithms.
+
+## Common Quantum Machine Learning Algorithms
+
 <!-- TODO: Section -->
 
-## Goals of Quantum Machine Learning
-
-<!-- TODO: Section -->
-
-## Application of Quantum Computing in Machine Learning
+## Applications of Quantum Machine Learning in the Real World
 
 <!-- TODO: Section -->
 

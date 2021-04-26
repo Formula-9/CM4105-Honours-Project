@@ -8,6 +8,16 @@ In order to provide a step-by-step tutorial, we will start with a single-qubit i
 
 Furthermore, mathematical explanations will be provided in order to clarify how the circuit works, though reading the referenced materials can also be a good idea if you desire to get more in-depth explanations about Quantum Fourier Transform, the vanilla Fast Fourier Transform or just the Fourier Transform in general.
 
+## Preface: The Maths behind the Quantum Fourier Transform
+
+To better understand how QFT works and can be built, we are first going to comment on the mathematical definition of the Quantum Fourier Transform. As a reminder, the formula for the standard Discrete Fourier Transform (DFT) is as follows:
+
+<img src="img/lab03/dft_formula.png" alt="DFT(k) = (1/√N) * Σ[n=0; N-1] x(n)*e^(2πi*((n*k)/N))" />
+
+The goal of the Discrete Fourier Transform is to convert a sequence of N complex numbers to a different sequence of complex numbers. The Quantum version of this formula is the same, with the difference that we are applying it to states |i⟩. The IBM Qiskit websites expresses this change as the following mapping operation:
+
+<img src="img/lab03/qft_mapping.png" alt="|x⟩ => (1/√N) * Σ[n=0; N-1] e^(2πi*((x*y)/N)) * |y⟩" />
+
 ### Step 1: A Single Qubit QFT Circuit
 
 Let us begin by creating a new Quantum Circuit with a single Qubit. In case you haven't imported the necessary utilities, please import them with this piece of code:
@@ -33,9 +43,9 @@ one_qubit_circuit.h(0)
 #one_qubit_circuit.draw('mpl')
 ```
 
-This simple line performs a Hadamard operation on our unique Qubit q1. That's right, a single qubit QFT boils down to a single Hadamard gate on a Qubit. Why is it like this ?
+This simple line performs a Hadamard operation on our unique Qubit q1. That's right, a single qubit QFT boils down to a single Hadamard gate on a Qubit. Why is that ?
 
-<!-- TODO: Continue -->
+Because the Hadamard Gate, in its operation, is actually very similar to a Quantum Fourier Transform. To reuse a better and clearer definition, **_both produce the uniform superposition of all states_** (source: [Quantum Computing StackExchange: Why can the QFT be replaced by Hadamard gates?][se-quote]). However, using a Hadamard gate on its own won't be enough if we desire to use more qubits to make a more precise Quantum Fourier Transform.
 
 ### Step 2: Our QFT Circuit, now on two Qubits !
 
@@ -77,9 +87,7 @@ Oh, and also, the Qiskit website provides some interesting properties about the 
 
 These properties make sense if you read again what the S and T gates do on Qubits, but it is still interesting to observe such a behaviour.
 
-Now that we are back to the description of the circuit,
-
-<!-- TODO: Explain the rest: why the swap ? Why the H ? -->
+Now that we are back to the description of the circuit, let us review the changes: we now have a Controlled Phase Change on the second Qubit depending on the state of the first Qubit, and we apply a Hadamard gate on our second qubit to respect the formula we have seen in the first section of this lab (if you remember the e^(2πi*((n*k)/N)) section of the formula, you should be able to start piecing why we are using Controlled Phase Changes and Hadamard gates). Then, we exchange the order of the Qubits with a Swap gate to reorder the Qubits properly. This last phase is unnecessary if we are rigorous with the ordering of the Qubits/how they are measured, and a few papers discussing multiple Qubits QFT don't use Swap Gates, but some do. It has been detailed here for the sake of detailing why some researchers use it.
 
 ### Step 3: Double it again ! A QFT Circuit with Four Qubits !
 
@@ -124,13 +132,28 @@ four_qubit_circuit.swap(1, 2)
 # four_qubit_circuit.draw('mpl')
 ```
 
-<!-- TODO: Everything ! -->
+As we can see, we have built upon our previous design, and we have added more Controlled Phase Change Gates to follow the mathematical representation of the Quantum Fourier Transform, and additional Swap gates in order to reorder the Qubits as explained previously. This means that the Quantum Fourier Transform is scalable; we can use this 4-qubit circuit and build upon it to make a Quantum Fourier Transform circuit that operates on n qubits. Let us see how.
 
 ### Step 4: Generalizing and Conclusion
 
-With the result of previous exercises, we can generalize the QFT to n Qubits.
+With the result of previous exercises, we can generalize the QFT to n Qubits. This section won't be about building a circuit, but about giving a description of the circuit for n Qubits. So far, we have seen that the QFT can be implemented with the use of Hadamard gates, Controlled Phase gates, and optionally Swap gates. We have seen a practical implementation of the QFT on 2 and 4 qubits, but we can now, using the formula, create an "algorithm" that describes the QFT on n Qubits. The algorithm, as a step-by-step guide, would be:
 
-<!-- TODO: Explain the math -->
+```
+Start QFT
+	Allocate N qubits, named q0 to qN-1.
+	Allocate highestQubit to be equal to the index of the highest qubit
+	For qb, starting from the index of lowest qubit (ex: q0 => 0) to highestQubit, repeat:
+		Apply a Hadamard Gate to Qubit qb.
+		Allocate a variable n that starts at 1.
+		Allocate a variable q, starting from qb+1.
+		While q is inferior or equal to highestQubit, repeat:
+			Apply a Controlled Phase Gate, with λ = (2π/2^n) on qubit at index q.
+			Increment n by 1.
+		End Repeat
+		Add a barrier to the circuit.
+	End Repeat
+End QFT
+```
 
 ## Bonus: Completed Jupyter Notebook
 
@@ -152,5 +175,12 @@ A completed Jupyter Notebook of this Lab is available [here][lab03notebook].
 
 -   Quantum Computing (CST Part II). (n.d.). \[online\] . Available at: https://www.cl.cam.ac.uk/teaching/1920/QuantComp/Quantum_Computing_Lecture_9.pdf [Accessed 10 Mar. 2021].
 
+-   Quantum Science Summer School (QS3). 2021. QFT Fun on the IBM QX. [online] Available at: http://qs3.mit.edu/images/pdf/QS3-2017---QFT-Demo-on-IBM-QX.pdf [Accessed 4 April 2021].
+
+-   Quantum Computing Stack Exchange. (n.d.). quantum fourier transform - Why can the QFT be replaced by Hadamard gates? [online] Available at: https://quantumcomputing.stackexchange.com/questions/9769/why-can-the-qft-be-replaced-by-hadamard-gates [Accessed 4 Apr. 2021].
+
+-   Physics Stack Exchange. (n.d.). quantum mechanics - What is the order of the gates making up the QFT on two qubits? [online] Available at: https://physics.stackexchange.com/questions/202273/what-is-the-order-of-the-gates-making-up-the-qft-on-two-qubits [Accessed 6 Apr. 2021].
+
 [ibm-q-account]: https://quantum-computing.ibm.com/account
 [lab03notebook]: /data/notebooks/lab03.ipynb
+[se-quote]: https://quantumcomputing.stackexchange.com/questions/9769/why-can-the-qft-be-replaced-by-hadamard-gates
