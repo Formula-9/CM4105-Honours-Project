@@ -182,5 +182,5 @@ A completed Jupyter Notebook of this Lab is available [here][lab03notebook].
 -   Physics Stack Exchange. (n.d.). quantum mechanics - What is the order of the gates making up the QFT on two qubits? [online] Available at: https://physics.stackexchange.com/questions/202273/what-is-the-order-of-the-gates-making-up-the-qft-on-two-qubits [Accessed 6 Apr. 2021].
 
 [ibm-q-account]: https://quantum-computing.ibm.com/account
-[lab03notebook]: /data/notebooks/lab03.ipynb
+[lab03notebook]: https://github.com/Formula-9/CM4105-Honours-Project/blob/master/data/notebooks/lab03.ipynb
 [se-quote]: https://quantumcomputing.stackexchange.com/questions/9769/why-can-the-qft-be-replaced-by-hadamard-gates

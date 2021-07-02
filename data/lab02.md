@@ -123,7 +123,7 @@ As we can see, if our control bit bx is set, we apply a Pauli X gate to our qubi
 
 A completed version of this lab can be found [here][lab02notebook]. If you wish to run a Quantum Circuit on the IBM Q platform, here is how to do it.
 
-[lab02notebook]: /data/notebooks/lab02.ipynb
+[lab02notebook]: https://github.com/Formula-9/CM4105-Honours-Project/blob/master/data/notebooks/lab02.ipynb
 
 ## References
 
